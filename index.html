@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Home"
+---
+
+<h1>These are some code examples:</h1>
+
+{% for service in site.service-list %}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>{{service}}</h3>
+  </div>
+  <div class="panel-body">
+    <ul class="list-group">
+      {% for page in site.pages %}
+        {% if page.service == service %}
+          {% for language in site.language-list %}
+            {% if page.language == language %}
+            <li class="list-group-item"><a href="{{ page.url }}">[{{language}}] - {{ page.title }}</a></li>
+            {% endif %}   <!-- cat-match-p -->
+          {% endfor %}  <!-- page-category -->
+        {% endif %}   <!-- service-p -->
+      {% endfor %}  <!-- page -->
+    </ul>
+    {% endfor %}  <!-- cat -->
+
+  </div>
+</div>
+

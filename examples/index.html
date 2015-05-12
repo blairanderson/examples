@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="container mt">
+  <div class="col-sm-8">
+    <h1>Blog Posts...</h1>
+    <ul class="media-list">
+      {% for post in site.posts %}
+        <li class="media">
+          <div class="media-left">
+            <a href="{{ post.url }}">
+              <!--<img class="media-object" src="..." alt="...">-->
+              {{ post.date | date: "%Y-%m-%d" }}
+            </a>
+          </div>
+          <div class="media-body">
+            <a href="{{ post.url }}">
+              <h4 class="media-heading">{{ post.title }}</h4>
+              <i class="g-icon g-icon-post"></i>
+            </a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+

@@ -1,0 +1,211 @@
+---
+---
+
+
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL:
+ */
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+
+::-moz-selection {
+  background: #f2c2c9;
+  color: #a4003a;
+  text-shadow: none;
+}
+
+::selection {
+  background: #16a085;
+  color: #a4003a;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+p {
+  font-size: 32px;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 26px;
+  }
+}
+
+a.highlight {
+  text-decoration: none;
+  padding-bottom: 1px;
+  padding-top: 2px;
+  color: black;
+  &.a{
+    border-bottom: 1px solid #FE6541;
+
+  }
+  &.b {
+    border-bottom: 1px solid #5ADAFD;
+  }
+  &.c {
+    border-bottom: 1px solid #80BD00;
+  }
+}
+
+
+.centered {
+  text-align: center
+}
+
+.mt {
+  margin-top: 40px;
+}
+
+.mb {
+  margin-bottom: 40px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mb100 {
+  margin-bottom: 100px;
+}
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+
+
+.skill-container > svg {
+  width: 100%;
+  height: 15px;
+}
+.hr {
+  margin: 0 auto;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+  color: rgb(90, 218, 253);
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: rgb(90, 218, 253);
+  background-color: transparent;
+  border-bottom: 2px solid rgb(90, 218, 253)
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: rgb(90, 218, 253);
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/back.jpg) no-repeat center top;
+  padding: 75px 0px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: bottom;
+  width: 100%;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#headerwrap h1 {
+  color: #ffffff;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 20px;*/
+  /*letter-spacing: 4px;*/
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#headerwrap h4 {
+  font-weight: 400;
+  color: #ffffff
+}
+
+#social {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+}
+
+#social i {
+  font-size: 40px;
+  color: #4a4a4a
+}
+
+#social i:hover {
+  color: rgb(90, 218, 253)
+}
+
+#footerwrap {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: #2f2f2f;
+}
+
+#footerwrap p {
+  color: #f2f2f2;
+  margin-left: 10px;
+}
+
+/* Gallery */
+.gallery {
+  margin-top: 30px;
+}
+
+.gallery img:hover {
+  opacity: 0.4;
+}

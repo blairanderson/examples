@@ -1,0 +1,11 @@
+_site
+.DS_Store
+vendor/
+.sass-cache/
+Gruntfile.coffee
+Procfile
+Package.json
+node_modules/
+.idea/
+.Procfile.dev
+

@@ -1,0 +1,22 @@
+name: Code Examples
+title:  API Example Code
+highlighter: kramdown
+url: http://www.blairanderson.co/examples
+permalink: /:year-:month-:day/:title.html
+encoding: utf-8
+sass_dir: _sass
+base_url: /
+exclude: [
+  "vendor",
+  "node_modules",
+  "Gemfile",
+  "Gemfile.lock",
+  "bower_components"
+]
+language-list: [
+  "javascript",
+  "ruby"
+ ]
+service-list: [
+  "slack"
+]
